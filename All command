@@ -1,0 +1,13 @@
+## Columns
+---SCALA--
+
+df.("name")
+df.column("age")
+
+__Python__
+
+df.col("name")
+df.column("age")
+
+
+
