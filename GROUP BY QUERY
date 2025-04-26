@@ -1,0 +1,20 @@
+###GROUP BY QUERY
+
+%scala
+
+df.groupBy("DEST_COUNTRY_NAME)
+  .sum("count")
+  .withColumnRenamed("sum(count)", "total_dest")
+  .sort(desc("total_dest"))
+  .limit(5)
+  .show()
+
+%python
+
+df.groupBy("DEST_COUNTRY_NAME)\
+  .sum("count")\
+  .withColumnRenamed("sum(count)", "total_dest")\
+  .sort(desc("total_dest"))\
+  .limit(5)\
+  .show()
+
