@@ -1,0 +1,4 @@
+/bin/spark-submit \
+--class org.apache.spark.examples.Sparkpi \
+--master local \
+./examples/jars/spark-examples_2.11-2.2.jar 10
